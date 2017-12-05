@@ -1,0 +1,171 @@
+$accent-color: #F1793E;
+$text-color: #888;
+$main-color: #222;
+$bg-color-light: #eaeaea;
+$bg-color-dark: #1f1f1f;
+
+body{
+    color: $main-color;
+}
+
+a{
+    color: $accent-color;
+    
+    &:hover,
+    &:active,
+    &:focus{
+        color: $accent-color;
+    }
+    
+}
+
+.bg-light{
+    background-color: $bg-color-light;
+}
+
+.bg-dark{
+    color: #fff;
+    background-color: $bg-color-dark;
+    
+    .title{
+        color: #fff;
+    }
+    
+    .discription{
+        color: #fff;
+        
+        &::after{
+            background-color: #fff;
+        }
+        
+    }
+    
+}//.bg-dark
+
+p{
+    color: $text-color;
+}
+
+.top-menu{
+    
+    a:hover{
+        color: $accent-color;
+        background-color: rgba(255, 255, 255, 0.1);
+    }
+    
+}
+
+.title{
+    color: $main-color;
+}
+
+.discription{
+    color: $main-color;
+    
+    &::after{
+        background-color: $main-color;
+    }
+    
+}
+
+.section-about li{
+    color: $text-color;
+}
+
+.social-wrapp a{
+    
+    &:hover,
+    &:active,
+    &:focus{
+        color: darken($accent-color, 7%);
+    }
+    
+}
+
+.year{
+    color: #fff;
+    background-color: $accent-color;
+}
+
+.resume-descr{
+    color: darken($text-color, 15%);
+}
+
+.section-portfolio{
+    
+    li{
+        color: $text-color;
+        
+        &:hover{
+            color: #fff;
+        }
+        
+        &.active{
+            color: #fff;
+            border-bottom: 1px solid $accent-color;
+        }
+        
+    }
+    
+}//.section-portfolio
+
+.contacts-icon{
+    color: $accent-color;
+}
+
+.text-danger{
+    color: $accent-color;
+}
+
+.button{
+    color: #fff;
+    background-color: $accent-color;
+    
+    &:hover,
+    &:active,
+    &:focus{
+        background-color: darken($accent-color, 7%);
+    }
+    
+}
+
+.form{
+    
+    .form-group{
+        
+        input,
+        textarea{
+            color: $text-color;
+            
+            &:focus{
+                border: 1px solid $accent-color;
+            }
+    
+        }
+    }
+    
+}//.form
+
+//Placeholder
+*::-webkit-input-placeholder{
+    color: $text-color;
+    opacity: 0.6;
+}
+
+*:-moz-placeholder{
+    color: $text-color;
+    opacity: 0.6;
+}
+
+
+*::-moz-placeholder{
+    color: $text-color;
+    opacity: 0.6;
+}
+
+*:-ms-input-placeholder{
+    color: $text-color;
+    opacity: 0.6;
+}
+
+

@@ -1,0 +1,16 @@
+//Fonts
+$bold-font: 'raleway-bold', 'Arial', sans-serif;
+$semibold-font: 'raleway-semibold', 'Arial', sans-serif;
+$regular-font: 'raleway-regular', 'Arial', sans-serif;
+$light-font: 'raleway-light', 'Arial', sans-serif;
+
+//Mixins
+@mixin ul-reset{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+@mixin tr($time){
+    transition: all $time ease;
+}
